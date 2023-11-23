@@ -1,0 +1,4 @@
+.w3-sidebar {
+    /* outros estilos ... */
+    transition: width 0.5s;  /* ajuste a duração conforme necessário */
+  }
