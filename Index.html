@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <link rel="stylesheet" href="template/style.css">
 
@@ -39,31 +40,29 @@
       
       <div class="w3-overlay w3-hide-large" onclick="Main.w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
       
-      <div class="w3-main">
-      
-        <div class="w3-row w3-padding-64">
-          <div class="w3-twothird w3-container">
-            <h1 class="w3-text-teal">Heading</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+      <div class="carousel-container" id="carouselContainer">
+        <div class="carousel-item" id="page1" onclick="window.location.href='pagina1.html'">
+          <img src="Imgs/coresTubos.png" alt="coresTubos" width="500px">
+          <h2>Conteúdo da Página 1</h2>
         </div>
-      
-        <div class="w3-row">
-          <div class="w3-twothird w3-container">
-            <h1 class="w3-text-teal">Heading</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+        <div class="carousel-item" id="page2" onclick="window.location.href='pagina2.html'">
+          <img src="Imgs/coresTubos.png" alt="coresTubos" width="500px">
+          <h2>Conteúdo da Página 2</h2>
         </div>
-      
-        <div class="w3-row w3-padding-64">
-          <div class="w3-twothird w3-container">
-            <h1 class="w3-text-teal">Heading</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+        <div class="carousel-item" id="page3" onclick="window.location.href='pagina3.html'">
+          <img src="Imgs/coresTubos.png" alt="coresTubos" width="500px">
+          <h2>Conteúdo da Página 3</h2>
         </div>
+        <!-- Adicione mais itens conforme necessário -->
+      </div>
+    
+      <!-- Setas de navegação -->
+      <div class="carousel-navigation">
+        <button onclick="prevSlide()">&lt;</button>
+        <button onclick="nextSlide()">&gt;</button>
+      </div>
+    
+        
       
         <footer id="myFooter" class="footer">
           <div class="w3-container w3-theme-l1 w3-left">
@@ -73,5 +72,6 @@
       
     </div>
     <script src="Main.js" defer></script>
+    <script src="Scripts/carrocelScript.js" defer></script>
 </body>
 </html>

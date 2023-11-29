@@ -2,3 +2,50 @@
     /* outros estilos ... */
     transition: width 0.5s;  /* ajuste a duração conforme necessário */
   }
+
+  .carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .carousel-navigation button {
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 280px;
+    cursor: pointer;
+    opacity: 0.08;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-navigation button:hover {
+    opacity: 1;
+  }
+  
