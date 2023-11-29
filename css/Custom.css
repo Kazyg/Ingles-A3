@@ -11,27 +11,41 @@
     white-space: nowrap;
     margin-top: 60px;
     position: relative;
-  }
-  
-  .carousel-item {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    cursor: pointer;
-    background-color: #ddd;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel-navigation {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
     align-items: center;
     justify-content:space-between;
   }
   
-  .carousel-navigation button {
+  .carousel-item {
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 500px;
+    scroll-snap-align: start;
+    cursor: pointer;
+    background-color: rgba(10,23,55,0.3);
+    transition: transform 0.5s ease;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+  }
+  
+  h2 {
+    position: relative;
+    transform: translateY(-50%);
+    left: -300px;
+    align-items: center;
+  }
+  
+  .carousel-navigation-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .carousel-navigation-right button {
     font-size: 20px;
     background-color: #333;
     color: white;
@@ -45,7 +59,39 @@
     align-items: center;
   }
 
-  .carousel-navigation button:hover {
-    opacity: 1;
+  .carousel-navigation-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
   }
   
+  .carousel-navigation-left button {
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 280px;
+    cursor: pointer;
+    opacity: 0.08;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-navigation-left button:hover {
+    opacity: 1;
+  }
+  .carousel-navigation-right button:hover {
+    opacity: 1;
+  }
+
+  .imagemCarrocel{
+  width: 60%;
+  height: 500px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  }
+
