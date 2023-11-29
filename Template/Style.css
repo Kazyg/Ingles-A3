@@ -60,3 +60,7 @@
     z-index: 1000;
     background-color: #333;
   }
+
+  body{
+    background-image: url(../Imgs/fundo.jpg);
+  }
